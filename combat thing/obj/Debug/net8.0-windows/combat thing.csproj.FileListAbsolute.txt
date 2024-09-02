@@ -1,0 +1,16 @@
+G:\made games\combat thing\bin\Debug\net8.0-windows\combat thing.exe
+G:\made games\combat thing\bin\Debug\net8.0-windows\combat thing.deps.json
+G:\made games\combat thing\bin\Debug\net8.0-windows\combat thing.runtimeconfig.json
+G:\made games\combat thing\bin\Debug\net8.0-windows\combat thing.dll
+G:\made games\combat thing\bin\Debug\net8.0-windows\combat thing.pdb
+G:\made games\combat thing\obj\Debug\net8.0-windows\combat_thing.Form1.resources
+G:\made games\combat thing\obj\Debug\net8.0-windows\combat thing.csproj.GenerateResource.cache
+G:\made games\combat thing\obj\Debug\net8.0-windows\combat thing.GeneratedMSBuildEditorConfig.editorconfig
+G:\made games\combat thing\obj\Debug\net8.0-windows\combat thing.AssemblyInfoInputs.cache
+G:\made games\combat thing\obj\Debug\net8.0-windows\combat thing.AssemblyInfo.cs
+G:\made games\combat thing\obj\Debug\net8.0-windows\combat thing.csproj.CoreCompileInputs.cache
+G:\made games\combat thing\obj\Debug\net8.0-windows\combat thing.dll
+G:\made games\combat thing\obj\Debug\net8.0-windows\refint\combat thing.dll
+G:\made games\combat thing\obj\Debug\net8.0-windows\combat thing.pdb
+G:\made games\combat thing\obj\Debug\net8.0-windows\combat thing.genruntimeconfig.cache
+G:\made games\combat thing\obj\Debug\net8.0-windows\ref\combat thing.dll
