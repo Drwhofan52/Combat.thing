@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\made games\\Combat.thing\\combat thing.csproj",
+      "projectUniqueName": "G:\\made games\\combat thing.csproj",
       "projectName": "combat thing",
-      "projectPath": "G:\\made games\\Combat.thing\\combat thing.csproj",
+      "projectPath": "G:\\made games\\combat thing.csproj",
       "packagesPath": "C:\\Users\\drwho\\.nuget\\packages\\",
-      "outputPath": "G:\\made games\\Combat.thing\\obj\\",
+      "outputPath": "G:\\made games\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
