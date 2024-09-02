@@ -7,43 +7,42 @@ using System.Threading.Tasks;
 
 namespace combat_thing
 {
-    public class Player
+    public class Enemy
     {
 
-        //player stats
+        //enemy stats
         public double Health;
         public double Power;
         public double DmgTkn;
         public bool Missed;
-        public string Target;
+        public string Target = "TR";
 
         //constructer
-        public Player(double Health, double Power)
+        public Enemy(double health, double power)
         {
 
-            this.Health = Health;
-            this.Power = Power;
-
-
+            //constructed stats
+            this.Health = health;
+            this.Power = power;
+        
         }
 
-        //method for checking health
+        //method for checking the health
         public void CheckHlh()
         {
 
             //text output for health
-            Debug.WriteLine("Player Health IS : " + Health);
+            Debug.WriteLine("Enemy Health IS : " + Health);
             Debug.WriteLine(" ");
 
         }
 
-        //hit processing
         public void WasHit()
         {
 
             //hit comp
             Debug.WriteLine("was hit");
-            
+
             //health change
             Health = Health - DmgTkn;
 
@@ -51,6 +50,7 @@ namespace combat_thing
             Debug.WriteLine("Hit was processed");
 
         }
+
 
     }
 }

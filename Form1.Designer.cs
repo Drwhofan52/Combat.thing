@@ -28,53 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            CloseBtn = new Label();
-            Atkbtn = new Button();
+            BattleBtn = new Button();
+            TRTBtn = new Button();
+            TLTBtn = new Button();
+            BLTbtn = new Button();
+            BRTBtn = new Button();
             SuspendLayout();
             // 
-            // CloseBtn
+            // BattleBtn
             // 
-            CloseBtn.AutoSize = true;
-            CloseBtn.BackColor = SystemColors.Desktop;
-            CloseBtn.ForeColor = Color.CornflowerBlue;
-            CloseBtn.Location = new Point(439, -1);
-            CloseBtn.Margin = new Padding(5, 0, 5, 0);
-            CloseBtn.Name = "CloseBtn";
-            CloseBtn.Size = new Size(60, 24);
-            CloseBtn.TabIndex = 0;
-            CloseBtn.Text = "close";
-            CloseBtn.Click += CloseBtn_Click;
+            BattleBtn.Location = new Point(416, 470);
+            BattleBtn.Name = "BattleBtn";
+            BattleBtn.Size = new Size(143, 79);
+            BattleBtn.TabIndex = 0;
+            BattleBtn.Text = "battle";
+            BattleBtn.UseVisualStyleBackColor = true;
+            BattleBtn.Click += BattleBtn_Click;
             // 
-            // Atkbtn
+            // TRTBtn
             // 
-            Atkbtn.Location = new Point(183, 233);
-            Atkbtn.Name = "Atkbtn";
-            Atkbtn.Size = new Size(75, 64);
-            Atkbtn.TabIndex = 1;
-            Atkbtn.Text = "fuck";
-            Atkbtn.UseVisualStyleBackColor = true;
-            Atkbtn.Click += Atkbtn_Click;
+            TRTBtn.Location = new Point(565, 241);
+            TRTBtn.Name = "TRTBtn";
+            TRTBtn.Size = new Size(106, 96);
+            TRTBtn.TabIndex = 1;
+            TRTBtn.Text = "TR";
+            TRTBtn.UseVisualStyleBackColor = true;
+            TRTBtn.Click += TRTBtn_Click;
+            // 
+            // TLTBtn
+            // 
+            TLTBtn.Location = new Point(304, 241);
+            TLTBtn.Name = "TLTBtn";
+            TLTBtn.Size = new Size(106, 96);
+            TLTBtn.TabIndex = 2;
+            TLTBtn.Text = "TL";
+            TLTBtn.UseVisualStyleBackColor = true;
+            // 
+            // BLTbtn
+            // 
+            BLTbtn.Location = new Point(304, 380);
+            BLTbtn.Name = "BLTbtn";
+            BLTbtn.Size = new Size(106, 96);
+            BLTbtn.TabIndex = 3;
+            BLTbtn.Text = "BL";
+            BLTbtn.UseVisualStyleBackColor = true;
+            // 
+            // BRTBtn
+            // 
+            BRTBtn.Location = new Point(565, 380);
+            BRTBtn.Name = "BRTBtn";
+            BRTBtn.Size = new Size(106, 96);
+            BRTBtn.TabIndex = 4;
+            BRTBtn.Text = "BR";
+            BRTBtn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(12F, 24F);
+            AutoScaleDimensions = new SizeF(19F, 47F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Desktop;
-            ClientSize = new Size(500, 500);
-            Controls.Add(Atkbtn);
-            Controls.Add(CloseBtn);
-            Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            FormBorderStyle = FormBorderStyle.SizableToolWindow;
-            Margin = new Padding(5);
+            BackColor = Color.DimGray;
+            ClientSize = new Size(984, 561);
+            Controls.Add(BRTBtn);
+            Controls.Add(BLTbtn);
+            Controls.Add(TLTBtn);
+            Controls.Add(TRTBtn);
+            Controls.Add(BattleBtn);
+            Font = new Font("Segoe UI", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(8, 9, 8, 9);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label CloseBtn;
-        private Button Atkbtn;
+        private Button BattleBtn;
+        private Button TRTBtn;
+        private Button TLTBtn;
+        private Button BLTbtn;
+        private Button BRTBtn;
     }
 }
