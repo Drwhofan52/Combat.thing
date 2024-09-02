@@ -18,12 +18,12 @@ namespace combat_thing
         public string Target;
 
         //constructer
-        public Player(double Health, double Power)
+        public Player(double Health, double Power, string Target)
         {
 
             this.Health = Health;
             this.Power = Power;
-
+            this.Target = Target;
 
         }
 

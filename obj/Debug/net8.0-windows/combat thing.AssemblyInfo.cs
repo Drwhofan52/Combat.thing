@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("combat thing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de81134f76a2f603f6c02874a0f0a5d14bc09222")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67599a13407e7b6b5c5ea24184635d879822fbdb")]
 [assembly: System.Reflection.AssemblyProductAttribute("combat thing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("combat thing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

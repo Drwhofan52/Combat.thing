@@ -63,6 +63,7 @@
             TLTBtn.TabIndex = 2;
             TLTBtn.Text = "TL";
             TLTBtn.UseVisualStyleBackColor = true;
+            TLTBtn.Click += TLTBtn_Click;
             // 
             // BLTbtn
             // 
@@ -72,6 +73,7 @@
             BLTbtn.TabIndex = 3;
             BLTbtn.Text = "BL";
             BLTbtn.UseVisualStyleBackColor = true;
+            BLTbtn.Click += BLTbtn_Click;
             // 
             // BRTBtn
             // 
@@ -81,6 +83,7 @@
             BRTBtn.TabIndex = 4;
             BRTBtn.Text = "BR";
             BRTBtn.UseVisualStyleBackColor = true;
+            BRTBtn.Click += BRTBtn_Click;
             // 
             // Form1
             // 

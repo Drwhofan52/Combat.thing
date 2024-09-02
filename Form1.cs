@@ -6,24 +6,13 @@ namespace combat_thing
     {
 
         //temp objects
-        public Player player = new Player(10, 1);
-        public Enemy enemy = new Enemy(10, 1);
+        public Player player = new Player(10, 1, "TR");
+        public Enemy enemy = new Enemy(10, 1, "TR");
 
 
 
 
-        //for targeting btns
-        public bool TRT = false;
-        public bool TLT = false;
-        public bool BRT = false;
-        public bool BLT = false;
 
-        /*for targeting btns 
-        public bool ETRT = false;
-        public bool ETLT = false;
-        public bool EBRT = false;
-        public bool EBLT = false;
-        */
 
         public Form1()
         {
@@ -105,6 +94,21 @@ namespace combat_thing
         private void TRTBtn_Click(object sender, EventArgs e)
         {
             player.Target = "TR";
+        }
+
+        private void TLTBtn_Click(object sender, EventArgs e)
+        {
+            player.Target = "TL";
+        }
+
+        private void BLTbtn_Click(object sender, EventArgs e)
+        {
+            player.Target = "BL";
+        }
+
+        private void BRTBtn_Click(object sender, EventArgs e)
+        {
+            player.Target = "BR";
         }
     }
 

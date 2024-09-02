@@ -15,16 +15,17 @@ namespace combat_thing
         public double Power;
         public double DmgTkn;
         public bool Missed;
-        public string Target = "TR";
+        public string Target;
 
         //constructer
-        public Enemy(double health, double power)
+        public Enemy(double health, double power, string Target)
         {
 
             //constructed stats
             this.Health = health;
             this.Power = power;
-        
+            this.Target = Target;
+
         }
 
         //method for checking the health
