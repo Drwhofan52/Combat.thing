@@ -13,7 +13,7 @@ namespace combat_thing
         //enemy stats
         public double Health;
         public double Power;
-        public double DmgTkn;
+        public double  DmgTkn;
         public bool Missed;
         public string Target;
 
