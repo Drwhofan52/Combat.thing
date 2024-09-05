@@ -5,9 +5,13 @@ namespace combat_thing
     public partial class Form1 : Form
     {
 
+
+
+
         //temp objects
-        public Player player = new Player(10, 1, "TR");
-        public Enemy enemy = new Enemy(10, 1, "TR");
+        public Player player = new Player(10, 10, 1, 1, 10, "TR");
+        public Enemy enemy = new Enemy(10, 10, 1, "TR");
+        public int HBH;
 
 
 
@@ -22,7 +26,7 @@ namespace combat_thing
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            UpdateHealth();
         }
 
 
@@ -89,11 +93,15 @@ namespace combat_thing
             Debug.WriteLine("the interaction has finished");
             Debug.WriteLine(" ");
 
+            UpdateHealth();
+            CallTheReaper();
+            UpdateHealth();
         }
 
         private void TRTBtn_Click(object sender, EventArgs e)
         {
             player.Target = "TR";
+
         }
 
         private void TLTBtn_Click(object sender, EventArgs e)
@@ -109,6 +117,71 @@ namespace combat_thing
         private void BRTBtn_Click(object sender, EventArgs e)
         {
             player.Target = "BR";
+        }
+
+
+        public void UpdateHealth()
+        {
+
+            player.Health = Math.Round(player.Health);
+            HBH = Convert.ToInt32(player.Health);
+            HealthBar.Value = HBH;
+            HthLbl2.Text = "=  " + Convert.ToString(player.Health);
+
+        }
+
+        public void CallTheReaper()
+        {
+            if (player.Health == 0)
+            {
+                Debug.WriteLine("player is dead   restarting");
+                enemy.Health = enemy.MHealth;
+                player.Health = player.MHealth;
+            }
+            else if (enemy.Health == 0)
+            {
+                Debug.WriteLine("enmey is dead   restarting");
+                enemy.Health = enemy.MHealth;
+                player.Health = player.MHealth;
+            }
+            else
+            {
+
+                Debug.WriteLine("no one is dead");
+                UpdateHealth();
+            }
+
+
+
+        }
+
+        private void UpPwrbtn_Click(object sender, EventArgs e)
+        {
+
+            if (player.Power < player.Powermax)
+            {
+                player.Power = player.Power + player.Powermin;
+                Debug.WriteLine("power is :" + player.Power);
+            }
+            else
+            {
+                Debug.WriteLine("power Max has been reached");
+            }
+            
+        }
+
+        private void DnPwrbtn_Click(object sender, EventArgs e)
+        {
+            if (player.Power > player.Powermin)
+            {
+                player.Power = player.Power - player.Powermin;
+                Debug.WriteLine("power is :" + player.Power);
+            }
+            else
+            {
+                Debug.WriteLine("power Min has been reached");
+            }
+            
         }
     }
 

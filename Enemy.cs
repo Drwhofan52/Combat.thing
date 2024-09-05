@@ -12,19 +12,21 @@ namespace combat_thing
 
         //enemy stats
         public double Health;
+        public double MHealth;
         public double Power;
-        public double  DmgTkn;
+        public double DmgTkn;
         public bool Missed;
         public string Target;
 
         //constructer
-        public Enemy(double health, double power, string Target)
+        public Enemy(double health, double MHealth, double power, string Target)
         {
 
             //constructed stats
             this.Health = health;
             this.Power = power;
             this.Target = Target;
+            this.MHealth = MHealth;
 
         }
 

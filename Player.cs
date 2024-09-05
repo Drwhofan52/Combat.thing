@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,18 +13,25 @@ namespace combat_thing
 
         //player stats
         public double Health;
+        public double MHealth;
+        public int HBH;
         public double Power;
+        public double Powermin;
+        public double Powermax;
         public double DmgTkn;
         public bool Missed;
         public string Target;
 
         //constructer
-        public Player(double Health, double Power, string Target)
+        public Player(double Health, double MHealth, double Power, double PowerMin, double PowerMax, string Target)
         {
 
             this.Health = Health;
             this.Power = Power;
+            this.Powermin = PowerMin;
+            this.Powermax = PowerMax;
             this.Target = Target;
+            this.MHealth = MHealth;
 
         }
 
